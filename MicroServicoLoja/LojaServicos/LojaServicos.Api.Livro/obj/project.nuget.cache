@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "f1e7aCJKAhuKb8YvpP9rmXksTZ00Di3kfdWPuqAbwh1Cc8UQGAPqfLZFO0XmDh1nLbItjV0mWz1jPPkjCESXIw==",
+  "dgSpecHash": "tM096mlA7U/UUIrAXHVCpwzlrQKyd3WbgQ0Yf14A958+kpOFJBc6HLWuVupD2FjAn62eBKWeeWdDY1RoXPkr6g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cesar.belli\\source\\repos\\MicroServicoLoja\\LojaServicos\\LojaServicos.Api.Livro\\LojaServicos.Api.Livro.csproj",
+  "projectFilePath": "C:\\Repos-Estudo\\MicroServicoLoja\\LojaServicos\\LojaServicos.Api.Livro\\LojaServicos.Api.Livro.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cesar.belli\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\cesar.belli\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

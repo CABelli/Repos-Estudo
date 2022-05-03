@@ -20,6 +20,7 @@ namespace LojaServicos.Api.Autor.Modelo
         public AutorLivro AutorLivro { get; set; }
 
         // postgreen fica string 
+        // XXXXXXX
         public string GrauAcademicoGuid { get; set; }
     }
 }

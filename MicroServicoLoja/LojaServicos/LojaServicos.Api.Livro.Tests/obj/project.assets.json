@@ -8253,11 +8253,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cesar.belli\\source\\repos\\MicroServicoLoja\\LojaServicos\\LojaServicos.Api.Livro.Tests\\LojaServicos.Api.Livro.Tests.csproj",
+      "projectUniqueName": "C:\\Repos-Estudo\\MicroServicoLoja\\LojaServicos\\LojaServicos.Api.Livro.Tests\\LojaServicos.Api.Livro.Tests.csproj",
       "projectName": "LojaServicos.Api.Livro.Tests",
-      "projectPath": "C:\\Users\\cesar.belli\\source\\repos\\MicroServicoLoja\\LojaServicos\\LojaServicos.Api.Livro.Tests\\LojaServicos.Api.Livro.Tests.csproj",
+      "projectPath": "C:\\Repos-Estudo\\MicroServicoLoja\\LojaServicos\\LojaServicos.Api.Livro.Tests\\LojaServicos.Api.Livro.Tests.csproj",
       "packagesPath": "C:\\Users\\cesar.belli\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cesar.belli\\source\\repos\\MicroServicoLoja\\LojaServicos\\LojaServicos.Api.Livro.Tests\\obj\\",
+      "outputPath": "C:\\Repos-Estudo\\MicroServicoLoja\\LojaServicos\\LojaServicos.Api.Livro.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -8278,8 +8278,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\cesar.belli\\source\\repos\\MicroServicoLoja\\LojaServicos\\LojaServicos.Api.Livro\\LojaServicos.Api.Livro.csproj": {
-              "projectPath": "C:\\Users\\cesar.belli\\source\\repos\\MicroServicoLoja\\LojaServicos\\LojaServicos.Api.Livro\\LojaServicos.Api.Livro.csproj"
+            "C:\\Repos-Estudo\\MicroServicoLoja\\LojaServicos\\LojaServicos.Api.Livro\\LojaServicos.Api.Livro.csproj": {
+              "projectPath": "C:\\Repos-Estudo\\MicroServicoLoja\\LojaServicos\\LojaServicos.Api.Livro\\LojaServicos.Api.Livro.csproj"
             }
           }
         }

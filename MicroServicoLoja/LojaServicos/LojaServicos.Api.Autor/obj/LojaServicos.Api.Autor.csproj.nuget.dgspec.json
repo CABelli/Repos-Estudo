@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cesar.belli\\source\\repos\\MicroServicoLoja\\LojaServicos\\LojaServicos.Api.Autor\\LojaServicos.Api.Autor.csproj": {}
+    "C:\\Repos-Estudo\\MicroServicoLoja\\LojaServicos\\LojaServicos.Api.Autor\\LojaServicos.Api.Autor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cesar.belli\\source\\repos\\MicroServicoLoja\\LojaServicos\\LojaServicos.Api.Autor\\LojaServicos.Api.Autor.csproj": {
+    "C:\\Repos-Estudo\\MicroServicoLoja\\LojaServicos\\LojaServicos.Api.Autor\\LojaServicos.Api.Autor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cesar.belli\\source\\repos\\MicroServicoLoja\\LojaServicos\\LojaServicos.Api.Autor\\LojaServicos.Api.Autor.csproj",
+        "projectUniqueName": "C:\\Repos-Estudo\\MicroServicoLoja\\LojaServicos\\LojaServicos.Api.Autor\\LojaServicos.Api.Autor.csproj",
         "projectName": "LojaServicos.Api.Autor",
-        "projectPath": "C:\\Users\\cesar.belli\\source\\repos\\MicroServicoLoja\\LojaServicos\\LojaServicos.Api.Autor\\LojaServicos.Api.Autor.csproj",
+        "projectPath": "C:\\Repos-Estudo\\MicroServicoLoja\\LojaServicos\\LojaServicos.Api.Autor\\LojaServicos.Api.Autor.csproj",
         "packagesPath": "C:\\Users\\cesar.belli\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cesar.belli\\source\\repos\\MicroServicoLoja\\LojaServicos\\LojaServicos.Api.Autor\\obj\\",
+        "outputPath": "C:\\Repos-Estudo\\MicroServicoLoja\\LojaServicos\\LojaServicos.Api.Autor\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
