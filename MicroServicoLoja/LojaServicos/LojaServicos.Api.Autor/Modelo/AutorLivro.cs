@@ -18,5 +18,7 @@ namespace LojaServicos.Api.Autor.Modelo
         public ICollection<GrauAcademico> GrauAcademicos { get; set; }
 
         public string AutorLivroGuid { get; set; }
+
+        ///   ambev 0605 14:14
     }
 }
