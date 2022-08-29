@@ -29,7 +29,7 @@ namespace LojaServicos.Api.GateWay.MessageHandler
 			var response = await base.SendAsync(request, cancellationToken);
 			if (response.IsSuccessStatusCode)
 			{
-				_logger.LogInformation("*** ***  response  OK *** ***  ");
+				_logger.LogInformation("*** ***  response  OK 02  *** ***  ");
 
 				var contendo = await response.Content.ReadAsStringAsync();
 				var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
