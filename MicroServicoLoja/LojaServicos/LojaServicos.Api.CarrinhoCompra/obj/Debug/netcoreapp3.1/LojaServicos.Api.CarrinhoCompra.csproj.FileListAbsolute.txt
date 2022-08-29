@@ -64,7 +64,6 @@ C:\Users\cesar.belli\source\repos\MicroServicoLoja\LojaServicos\LojaServicos.Api
 C:\Users\cesar.belli\source\repos\MicroServicoLoja\LojaServicos\LojaServicos.Api.CarrinhoCompra\obj\Debug\netcoreapp3.1\LojaServicos.Api.CarrinhoCompra.csproj.AssemblyReference.cache
 C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.CarrinhoCompra\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.CarrinhoCompra\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.CarrinhoCompra\bin\Debug\netcoreapp3.1\LojaServicos.Api.CarrinhoCompra.StaticWebAssets.xml
 C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.CarrinhoCompra\bin\Debug\netcoreapp3.1\LojaServicos.Api.CarrinhoCompra.exe
 C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.CarrinhoCompra\bin\Debug\netcoreapp3.1\LojaServicos.Api.CarrinhoCompra.deps.json
 C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.CarrinhoCompra\bin\Debug\netcoreapp3.1\LojaServicos.Api.CarrinhoCompra.runtimeconfig.json
@@ -84,17 +83,13 @@ C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.CarrinhoCompra\bi
 C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.CarrinhoCompra\bin\Debug\netcoreapp3.1\MediatR.dll
 C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.CarrinhoCompra\bin\Debug\netcoreapp3.1\MediatR.Contracts.dll
 C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.CarrinhoCompra\bin\Debug\netcoreapp3.1\MediatR.Extensions.Microsoft.DependencyInjection.dll
-C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.CarrinhoCompra\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.CarrinhoCompra\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
 C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.CarrinhoCompra\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
 C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.CarrinhoCompra\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.CarrinhoCompra\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.CarrinhoCompra\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.CarrinhoCompra\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
 C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.CarrinhoCompra\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
-C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.CarrinhoCompra\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
 C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.CarrinhoCompra\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.CarrinhoCompra\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
 C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.CarrinhoCompra\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
 C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.CarrinhoCompra\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.CarrinhoCompra\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
@@ -125,3 +120,7 @@ C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.CarrinhoCompra\ob
 C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.CarrinhoCompra\obj\Debug\netcoreapp3.1\LojaServicos.Api.CarrinhoCompra.dll
 C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.CarrinhoCompra\obj\Debug\netcoreapp3.1\LojaServicos.Api.CarrinhoCompra.pdb
 C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.CarrinhoCompra\obj\Debug\netcoreapp3.1\LojaServicos.Api.CarrinhoCompra.genruntimeconfig.cache
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.CarrinhoCompra\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.CarrinhoCompra\bin\Debug\netcoreapp3.1\Humanizer.dll
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.CarrinhoCompra\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.CarrinhoCompra\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll

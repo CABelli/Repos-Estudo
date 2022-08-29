@@ -21,6 +21,7 @@ namespace LojaServicos.Api.Autor.Modelo
 
         // postgreen fica string 
         // XXXXXXX
+        /// yyyyyyyy
         public string GrauAcademicoGuid { get; set; }
     }
 }

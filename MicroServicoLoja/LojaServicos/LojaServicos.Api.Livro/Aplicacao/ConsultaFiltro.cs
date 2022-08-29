@@ -32,6 +32,7 @@ namespace LojaServicos.Api.Livro.Aplicacao
 
             public async Task<LivrariaMaterialDto> Handle(LivroUnico request, CancellationToken cancellationToken)
             {
+                Console.WriteLine(" *** ***  ConsultaFiltro Manejador Handle LivroUnico *** *** ");
                 var livro = await _contexto.LivrariaMaterial.Where( x => x.LivrariaMaterialId == request.LivroId).FirstOrDefaultAsync();
 
                 if (livro == null)

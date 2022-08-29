@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31911.196
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LojaServicos.Api.Autor", "LojaServicos.Api.Autor\LojaServicos.Api.Autor.csproj", "{568092DC-A14F-4A7C-8DD9-A247A6EA68F3}"
 EndProject
@@ -9,7 +9,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LojaServicos.Api.Livro", "L
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LojaServicos.Api.CarrinhoCompra", "LojaServicos.Api.CarrinhoCompra\LojaServicos.Api.CarrinhoCompra.csproj", "{DB3B1446-45C3-4103-B612-B64D5CEAD281}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaServicos.Api.Livro.Tests", "LojaServicos.Api.Livro.Tests\LojaServicos.Api.Livro.Tests.csproj", "{CA278096-1E9E-4D7A-96D8-B299CC6B34D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LojaServicos.Api.Livro.Tests", "LojaServicos.Api.Livro.Tests\LojaServicos.Api.Livro.Tests.csproj", "{CA278096-1E9E-4D7A-96D8-B299CC6B34D6}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{E5F27EA3-9215-41A5-A4CA-2DA6C431B09A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LojaServicos.Api.GateWay", "LojaServicos.Api.GateWay\LojaServicos.Api.GateWay.csproj", "{860559C8-48BE-44D8-A3E3-D33D6060A38C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LojaServicos.RabbitMQ.Bus", "LojaServicos.RabbitMQ.Bus\LojaServicos.RabbitMQ.Bus.csproj", "{C1C408C5-D777-40E1-92D3-007FDE6DF654}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaServicos.Mensageria.Email", "LojaServicos.Mensageria.Email\LojaServicos.Mensageria.Email.csproj", "{62360BBE-DC33-4B27-8D92-7474BE527470}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +41,22 @@ Global
 		{CA278096-1E9E-4D7A-96D8-B299CC6B34D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA278096-1E9E-4D7A-96D8-B299CC6B34D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA278096-1E9E-4D7A-96D8-B299CC6B34D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5F27EA3-9215-41A5-A4CA-2DA6C431B09A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5F27EA3-9215-41A5-A4CA-2DA6C431B09A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5F27EA3-9215-41A5-A4CA-2DA6C431B09A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5F27EA3-9215-41A5-A4CA-2DA6C431B09A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{860559C8-48BE-44D8-A3E3-D33D6060A38C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{860559C8-48BE-44D8-A3E3-D33D6060A38C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{860559C8-48BE-44D8-A3E3-D33D6060A38C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{860559C8-48BE-44D8-A3E3-D33D6060A38C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1C408C5-D777-40E1-92D3-007FDE6DF654}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1C408C5-D777-40E1-92D3-007FDE6DF654}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1C408C5-D777-40E1-92D3-007FDE6DF654}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1C408C5-D777-40E1-92D3-007FDE6DF654}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62360BBE-DC33-4B27-8D92-7474BE527470}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62360BBE-DC33-4B27-8D92-7474BE527470}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62360BBE-DC33-4B27-8D92-7474BE527470}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62360BBE-DC33-4B27-8D92-7474BE527470}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

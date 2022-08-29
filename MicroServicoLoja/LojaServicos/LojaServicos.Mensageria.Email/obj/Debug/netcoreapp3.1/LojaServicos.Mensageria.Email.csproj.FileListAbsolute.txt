@@ -1,0 +1,10 @@
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Mensageria.Email\bin\Debug\netcoreapp3.1\LojaServicos.Mensageria.Email.deps.json
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Mensageria.Email\bin\Debug\netcoreapp3.1\LojaServicos.Mensageria.Email.dll
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Mensageria.Email\bin\Debug\netcoreapp3.1\LojaServicos.Mensageria.Email.pdb
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Mensageria.Email\obj\Debug\netcoreapp3.1\LojaServicos.Mensageria.Email.csproj.AssemblyReference.cache
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Mensageria.Email\obj\Debug\netcoreapp3.1\LojaServicos.Mensageria.Email.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Mensageria.Email\obj\Debug\netcoreapp3.1\LojaServicos.Mensageria.Email.AssemblyInfoInputs.cache
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Mensageria.Email\obj\Debug\netcoreapp3.1\LojaServicos.Mensageria.Email.AssemblyInfo.cs
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Mensageria.Email\obj\Debug\netcoreapp3.1\LojaServicos.Mensageria.Email.csproj.CoreCompileInputs.cache
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Mensageria.Email\obj\Debug\netcoreapp3.1\LojaServicos.Mensageria.Email.dll
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Mensageria.Email\obj\Debug\netcoreapp3.1\LojaServicos.Mensageria.Email.pdb

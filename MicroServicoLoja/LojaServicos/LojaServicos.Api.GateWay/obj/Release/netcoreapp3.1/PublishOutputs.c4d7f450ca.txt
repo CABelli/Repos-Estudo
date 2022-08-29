@@ -1,0 +1,17 @@
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.GateWay\obj\Release\netcoreapp3.1\PubTmp\Out\LojaServicos.Api.GateWay.exe
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.GateWay\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.Development.json
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.GateWay\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.json
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.GateWay\obj\Release\netcoreapp3.1\PubTmp\Out\ocelot.json
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.GateWay\obj\Release\netcoreapp3.1\PubTmp\Out\LojaServicos.Api.GateWay.dll
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.GateWay\obj\Release\netcoreapp3.1\PubTmp\Out\LojaServicos.Api.GateWay.deps.json
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.GateWay\obj\Release\netcoreapp3.1\PubTmp\Out\LojaServicos.Api.GateWay.runtimeconfig.json
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.GateWay\obj\Release\netcoreapp3.1\PubTmp\Out\LojaServicos.Api.GateWay.pdb
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.GateWay\obj\Release\netcoreapp3.1\PubTmp\Out\FluentValidation.dll
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.GateWay\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.AspNetCore.JsonPatch.dll
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.GateWay\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.AspNetCore.MiddlewareAnalysis.dll
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.GateWay\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.GateWay\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.GateWay\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.Extensions.DiagnosticAdapter.dll
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.GateWay\obj\Release\netcoreapp3.1\PubTmp\Out\Newtonsoft.Json.dll
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.GateWay\obj\Release\netcoreapp3.1\PubTmp\Out\Newtonsoft.Json.Bson.dll
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.GateWay\obj\Release\netcoreapp3.1\PubTmp\Out\Ocelot.dll

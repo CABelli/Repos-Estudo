@@ -1,0 +1,10 @@
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.RabbitMQ.Bus\bin\Debug\netcoreapp3.1\LojaServicos.RabbitMQ.Bus.deps.json
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.RabbitMQ.Bus\bin\Debug\netcoreapp3.1\LojaServicos.RabbitMQ.Bus.dll
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.RabbitMQ.Bus\bin\Debug\netcoreapp3.1\LojaServicos.RabbitMQ.Bus.pdb
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.RabbitMQ.Bus\obj\Debug\netcoreapp3.1\LojaServicos.RabbitMQ.Bus.csproj.AssemblyReference.cache
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.RabbitMQ.Bus\obj\Debug\netcoreapp3.1\LojaServicos.RabbitMQ.Bus.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.RabbitMQ.Bus\obj\Debug\netcoreapp3.1\LojaServicos.RabbitMQ.Bus.AssemblyInfoInputs.cache
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.RabbitMQ.Bus\obj\Debug\netcoreapp3.1\LojaServicos.RabbitMQ.Bus.AssemblyInfo.cs
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.RabbitMQ.Bus\obj\Debug\netcoreapp3.1\LojaServicos.RabbitMQ.Bus.csproj.CoreCompileInputs.cache
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.RabbitMQ.Bus\obj\Debug\netcoreapp3.1\LojaServicos.RabbitMQ.Bus.dll
+C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.RabbitMQ.Bus\obj\Debug\netcoreapp3.1\LojaServicos.RabbitMQ.Bus.pdb

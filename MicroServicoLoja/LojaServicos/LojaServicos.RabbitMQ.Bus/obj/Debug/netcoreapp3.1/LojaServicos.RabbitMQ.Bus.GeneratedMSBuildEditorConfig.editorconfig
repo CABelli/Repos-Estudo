@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = LojaServicos.RabbitMQ.Bus
+build_property.ProjectDir = C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.RabbitMQ.Bus\

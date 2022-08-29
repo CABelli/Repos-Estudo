@@ -11,6 +11,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("5f4cc193-917d-40d4-955c-1ce30f3d3bf4")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("LojaServicos.Api.Livro")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

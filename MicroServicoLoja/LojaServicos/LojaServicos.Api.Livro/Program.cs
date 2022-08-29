@@ -13,7 +13,17 @@ namespace LojaServicos.Api.Livro
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            try
+            {
+                CreateHostBuilder(args).Build().Run();
+            } catch (Exception ex)
+            {
+
+                throw new Exception("metodo Main - livro - erro: " + ex);
+
+            }
+
+            
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

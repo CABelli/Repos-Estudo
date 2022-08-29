@@ -1,0 +1,32 @@
+version: '3.4'
+
+services:
+  lojaservicos.api.autor:
+    image: ${DOCKER_REGISTRY-}lojaservicosapiautor
+    build:
+      context: .
+      dockerfile: LojaServicos.Api.Autor/Dockerfile
+  lojaservicos.api.livro:
+    image: ${DOCKER_REGISTRY-}lojaservicosapilivro
+    build:
+      context: .
+      dockerfile: LojaServicos.Api.Livro/Dockerfile
+
+  lojaservicos.api.carrinhocompra:
+    image: ${DOCKER_REGISTRY-}lojaservicosapicarrinhocompra
+    build:
+      context: .
+      dockerfile: LojaServicos.Api.CarrinhoCompra/Dockerfile
+
+  lojaservicos.api.gateway:
+    image: ${DOCKER_REGISTRY-}lojaservicosapigateway
+    build:
+      context: .
+      dockerfile: LojaServicos.Api.GateWay/Dockerfile
+
+networks:
+  default:
+    external:
+      name: microservicenet
+
+

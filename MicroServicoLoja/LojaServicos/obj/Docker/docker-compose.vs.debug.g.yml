@@ -1,0 +1,113 @@
+version: '3.4'
+
+services:
+  lojaservicos.api.autor:
+    image: lojaservicosapiautor:dev
+    container_name: LojaServicos.Api.Autor
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "LojaServicos.Api.Autor"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      - NUGET_FALLBACK_PACKAGES=
+    volumes:
+      - C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.Autor:/app
+      - C:\Repos-Estudo\MicroServicoLoja\LojaServicos:/src
+      - C:\Users\Cesar Belli\vsdbg\vs2017u5:/remote_debugger:rw
+      - C:\Users\Cesar Belli\.nuget\packages\:/root/.nuget/packages:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages  \"/app/bin/Debug/netcoreapp3.1/LojaServicos.Api.Autor.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true
+  lojaservicos.api.carrinhocompra:
+    image: lojaservicosapicarrinhocompra:dev
+    container_name: LojaServicos.Api.CarrinhoCompra
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "LojaServicos.Api.CarrinhoCompra"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      - NUGET_FALLBACK_PACKAGES=
+    volumes:
+      - C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.CarrinhoCompra:/app
+      - C:\Repos-Estudo\MicroServicoLoja\LojaServicos:/src
+      - C:\Users\Cesar Belli\vsdbg\vs2017u5:/remote_debugger:rw
+      - C:\Users\Cesar Belli\.nuget\packages\:/root/.nuget/packages:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages  \"/app/bin/Debug/netcoreapp6.0/LojaServicos.Api.CarrinhoCompra.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true
+
+  lojaservicos.api.gateway:
+    image: lojaservicosapigateway:dev
+    container_name: LojaServicos.Api.GateWay
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "LojaServicos.Api.GateWay"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      - NUGET_FALLBACK_PACKAGES=
+    volumes:
+      - C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.GateWay:/app
+      - C:\Repos-Estudo\MicroServicoLoja\LojaServicos:/src
+      - C:\Users\Cesar Belli\vsdbg\vs2017u5:/remote_debugger:rw
+      - C:\Users\Cesar Belli\.nuget\packages\:/root/.nuget/packages:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages  \"/app/bin/Debug/netcoreapp3.1/LojaServicos.Api.GateWay.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true
+
+  lojaservicos.api.livro:
+    image: lojaservicosapilivro:dev
+    container_name: LojaServicos.Api.Livro
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "LojaServicos.Api.Livro"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      - NUGET_FALLBACK_PACKAGES=
+    volumes:
+      - C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.Livro:/app
+      - C:\Repos-Estudo\MicroServicoLoja\LojaServicos:/src
+      - C:\Users\Cesar Belli\vsdbg\vs2017u5:/remote_debugger:rw
+      - C:\Users\Cesar Belli\.nuget\packages\:/root/.nuget/packages:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages  \"/app/bin/Debug/netcoreapp3.1/LojaServicos.Api.Livro.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true

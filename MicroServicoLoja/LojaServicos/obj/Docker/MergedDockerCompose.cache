@@ -1,0 +1,54 @@
+networks:
+  default:
+    external: true
+    name: microservicenet
+services:
+  lojaservicos.api.autor:
+    build:
+      context: C:\Repos-Estudo\MicroServicoLoja\LojaServicos
+      dockerfile: LojaServicos.Api.Autor/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: lojaservicosapiautor
+    ports:
+    - published: 6104
+      target: 80
+  lojaservicos.api.carrinhocompra:
+    build:
+      context: C:\Repos-Estudo\MicroServicoLoja\LojaServicos
+      dockerfile: LojaServicos.Api.CarrinhoCompra/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      Services__Livros: http://lojaservicos.api.livro
+    image: lojaservicosapicarrinhocompra
+    ports:
+    - published: 6106
+      target: 80
+  lojaservicos.api.gateway:
+    build:
+      context: C:\Repos-Estudo\MicroServicoLoja\LojaServicos
+      dockerfile: LojaServicos.Api.GateWay/Dockerfile
+    depends_on:
+      lojaservicos.api.livro:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      Services__Autor: ' http://lojaservicos.api.gateway'
+    image: lojaservicosapigateway
+    ports:
+    - published: 6107
+      target: 80
+  lojaservicos.api.livro:
+    build:
+      context: C:\Repos-Estudo\MicroServicoLoja\LojaServicos
+      dockerfile: LojaServicos.Api.Livro/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: lojaservicosapilivro
+    ports:
+    - published: 6105
+      target: 80
+    volumes:
+    - C:\Users\Cesar Belli\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\Cesar Belli\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+version: '3.4'

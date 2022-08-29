@@ -28,6 +28,7 @@ namespace LojaServicos.Api.Autor.Controllers
         [HttpGet]
         public async Task<ActionResult<List<AutorDto>>> GetAutores()
         {
+            Console.Write("AutorController - GetAutores");
             return await _mediator.Send(new Consulta.ListaAutor());
 
         }

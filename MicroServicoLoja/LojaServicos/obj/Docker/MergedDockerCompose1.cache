@@ -1,0 +1,143 @@
+networks:
+  default:
+    external: true
+    name: microservicenet
+services:
+  lojaservicos.api.autor:
+    build:
+      context: C:\Repos-Estudo\MicroServicoLoja\LojaServicos
+      dockerfile: LojaServicos.Api.Autor/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: LojaServicos.Api.Autor
+      target: base
+    container_name: LojaServicos.Api.Autor
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: ''
+    image: lojaservicosapiautor:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/netcoreapp3.1/LojaServicos.Api.Autor.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 6104
+      target: 80
+    tty: true
+    volumes:
+    - C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.Autor:/app:rw
+    - C:\Users\Cesar Belli\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\Cesar Belli\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\Cesar Belli\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Users\Cesar Belli\.nuget\packages:/root/.nuget/packages:ro
+    - C:\Repos-Estudo\MicroServicoLoja\LojaServicos:/src:rw
+  lojaservicos.api.carrinhocompra:
+    build:
+      context: C:\Repos-Estudo\MicroServicoLoja\LojaServicos
+      dockerfile: LojaServicos.Api.CarrinhoCompra/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: LojaServicos.Api.CarrinhoCompra
+      target: base
+    container_name: LojaServicos.Api.CarrinhoCompra
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: ''
+      Services__Livros: http://lojaservicos.api.livro
+    image: lojaservicosapicarrinhocompra:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/netcoreapp6.0/LojaServicos.Api.CarrinhoCompra.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 6106
+      target: 80
+    tty: true
+    volumes:
+    - C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.CarrinhoCompra:/app:rw
+    - C:\Users\Cesar Belli\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\Cesar Belli\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\Cesar Belli\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Users\Cesar Belli\.nuget\packages:/root/.nuget/packages:ro
+    - C:\Repos-Estudo\MicroServicoLoja\LojaServicos:/src:rw
+  lojaservicos.api.gateway:
+    build:
+      context: C:\Repos-Estudo\MicroServicoLoja\LojaServicos
+      dockerfile: LojaServicos.Api.GateWay/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: LojaServicos.Api.GateWay
+      target: base
+    container_name: LojaServicos.Api.GateWay
+    depends_on:
+      lojaservicos.api.livro:
+        condition: service_started
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: ''
+      Services__Autor: ' http://lojaservicos.api.gateway'
+    image: lojaservicosapigateway:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/netcoreapp3.1/LojaServicos.Api.GateWay.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 6107
+      target: 80
+    tty: true
+    volumes:
+    - C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.GateWay:/app:rw
+    - C:\Users\Cesar Belli\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\Cesar Belli\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\Cesar Belli\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Users\Cesar Belli\.nuget\packages:/root/.nuget/packages:ro
+    - C:\Repos-Estudo\MicroServicoLoja\LojaServicos:/src:rw
+  lojaservicos.api.livro:
+    build:
+      context: C:\Repos-Estudo\MicroServicoLoja\LojaServicos
+      dockerfile: LojaServicos.Api.Livro/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: LojaServicos.Api.Livro
+      target: base
+    container_name: LojaServicos.Api.Livro
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: ''
+    image: lojaservicosapilivro:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/netcoreapp3.1/LojaServicos.Api.Livro.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 6105
+      target: 80
+    tty: true
+    volumes:
+    - C:\Repos-Estudo\MicroServicoLoja\LojaServicos\LojaServicos.Api.Livro:/app:rw
+    - C:\Users\Cesar Belli\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\Cesar Belli\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\Cesar Belli\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Users\Cesar Belli\.nuget\packages:/root/.nuget/packages:ro
+    - C:\Repos-Estudo\MicroServicoLoja\LojaServicos:/src:rw
+version: '3.4'

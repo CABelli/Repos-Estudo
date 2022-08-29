@@ -1,20 +1,15 @@
 using FluentValidation.AspNetCore;
 using LojaServicos.Api.Livro.Aplicacao;
 using LojaServicos.Api.Livro.Persistencia;
+using LojaServicos.RabbitMQ.Bus.BusRabbit;
+using LojaServicos.RabbitMQ.Bus.Implement;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace LojaServicos.Api.Livro
 {
@@ -30,6 +25,15 @@ namespace LojaServicos.Api.Livro
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //services.AddTransient<IRabbitEventBus, RabbitEventBus>();
+
+            services.AddSingleton<IRabbitEventBus, RabbitEventBus>(sp =>
+            {
+                var scopeFactory = sp.GetRequiredService<IServiceScopeFactory>();
+
+                return new RabbitEventBus(sp.GetService<IMediator>(), scopeFactory);
+            });
+
             services.AddControllers().AddFluentValidation(cfg => cfg.RegisterValidatorsFromAssemblyContaining<Novo>());            
 
             services.AddDbContext<ContextoLivraria>(opt =>

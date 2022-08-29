@@ -37,6 +37,7 @@ namespace LojaServicos.Api.CarrinhoCompra
 
             services.AddDbContext<CarrinhoContexto>(options =>
             {
+                //options.UseMySQL(Configuration.GetConnectionString("ConexaoDataBase"));
                 options.UseMySQL(Configuration.GetConnectionString("ConexaoDataBase"));
             });
 
