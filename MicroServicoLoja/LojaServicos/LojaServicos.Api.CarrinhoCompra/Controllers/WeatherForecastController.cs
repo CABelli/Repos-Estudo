@@ -3,7 +3,6 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace LojaServicos.Api.CarrinhoCompra.Controllers
 {
@@ -26,6 +25,7 @@ namespace LojaServicos.Api.CarrinhoCompra.Controllers
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
+            Console.WriteLine("*** *** CarrinhoCompra.Controllers - WeatherForecastController - Get *** ***");
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {

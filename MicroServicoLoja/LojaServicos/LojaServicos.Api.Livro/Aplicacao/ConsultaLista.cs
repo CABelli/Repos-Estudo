@@ -5,7 +5,6 @@ using MediatR;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -29,6 +28,7 @@ namespace LojaServicos.Api.Livro.Aplicacao
 
             public async Task<List<LivrariaMaterialDto>> Handle(Executa request, CancellationToken cancellationToken)
             {
+                Console.WriteLine("*** *** Livro.Aplicacao - ConsultaLista/Manejador Handle *** ***");
                 var livros = await _contexto.LivrariaMaterial.ToListAsync();
                 var livrosDto = _mapper.Map<List<LivrariaMaterial>, List<LivrariaMaterialDto>>(livros);
 

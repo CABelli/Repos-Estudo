@@ -46,6 +46,7 @@ namespace LojaServicos.Api.Livro.Aplicacao
 
             public async Task<Unit> Handle(Executa request, CancellationToken cancellationToken)
             {
+                Console.WriteLine(" *** ***  class Novo/Manejador - Handle *** *** ");
                 var livro = new LivrariaMaterial
                 {
                     Titulo = request.Titulo,
@@ -63,9 +64,11 @@ namespace LojaServicos.Api.Livro.Aplicacao
 
                 if (valor > 0)
                 {
+                    Console.WriteLine(" *** ***  class Novo/Manejador - Handle - Sucesso *** *** ");
                     return Unit.Value;
                 }
 
+                Console.WriteLine(" *** ***  class Novo/Manejador - Handle - Zebra *** *** ");
                 throw new Exception("Não pode inserir o livro na LivrariaMaterial");
             }
         }

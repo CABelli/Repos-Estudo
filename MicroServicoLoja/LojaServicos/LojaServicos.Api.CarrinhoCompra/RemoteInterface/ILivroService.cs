@@ -1,7 +1,5 @@
 ﻿using LojaServicos.Api.CarrinhoCompra.RemoteModel;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace LojaServicos.Api.CarrinhoCompra.RemoteInterface
