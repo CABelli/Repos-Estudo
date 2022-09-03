@@ -37,7 +37,8 @@ namespace LojaServicos.RabbitMQ.Bus.Implement
 
         public void Publish<T>(T @evento) where T : Evento
         {
-            Console.Write("RabbitEventBus - Publish");
+            Console.WriteLine("*** *** RabbitEventBus - Publish *** ***");
+            
             var factory = new ConnectionFactory() { HostName = "rabbit-belli-web" };
 
             using (var connection = factory.CreateConnection())
@@ -52,13 +53,15 @@ namespace LojaServicos.RabbitMQ.Bus.Implement
                 var body = Encoding.UTF8.GetBytes(message);
 
                 channel.BasicPublish("", eventName, null, body);
+
+                Console.WriteLine("*** *** RabbitEventBus - Publish = ok *** ***");
             }
         }
 
         public void Subscribe<T, TH>() where T : Evento
                                 where TH : IEventoManejador<T>
         {
-            Console.Write("RabbitEventBus - Subscribe");
+            Console.WriteLine("*** *** RabbitEventBus - Subscribe *** ***");
             var eventoName = typeof(T).Name;
             var manejadorEventoTipo = typeof(TH);
 
@@ -95,11 +98,13 @@ namespace LojaServicos.RabbitMQ.Bus.Implement
             consumer.Received += Consumer_Delegate;
 
             channel.BasicConsume(eventoName, true, consumer);
+
+            Console.WriteLine("*** *** RabbitEventBus - Subscribe - ok *** ***");
         }
 
         private async Task Consumer_Delegate(object sender, BasicDeliverEventArgs e)
         {
-            Console.Write("RabbitEventBus - Consumer_Delegate");
+            Console.WriteLine("*** ***  RabbitEventBus - Consumer_Delegate *** ***");
             var nomeEvento = e.RoutingKey;
             var message = Encoding.UTF8.GetString(e.Body.ToArray());
 
@@ -122,6 +127,8 @@ namespace LojaServicos.RabbitMQ.Bus.Implement
                             var concretoTipo = typeof(IEventoManejador<>).MakeGenericType(tipoEvento);
 
                             await (Task)concretoTipo.GetMethod("Handle").Invoke(manejador, new object[] { eventoDS });
+
+                            Console.WriteLine("*** ***  RabbitEventBus - Consumer_Delegate - ok *** ***");
                         }
                     }
                 }

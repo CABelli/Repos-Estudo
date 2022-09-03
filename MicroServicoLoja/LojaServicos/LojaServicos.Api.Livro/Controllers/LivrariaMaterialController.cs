@@ -1,10 +1,8 @@
 ﻿using LojaServicos.Api.Livro.Aplicacao;
 using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace LojaServicos.Api.Livro.Controllers
@@ -23,21 +21,22 @@ namespace LojaServicos.Api.Livro.Controllers
         [HttpPost]
         public async Task<ActionResult<Unit>> Criar(Novo.Executa data)
         {
+            Console.WriteLine(" *** ***  Livro.Controllers - Criar *** *** ");
             return await _mediator.Send(data);
         }
 
         [HttpGet]
         public async Task<ActionResult<List<LivrariaMaterialDto>>> GetLivros()
         {
+            Console.WriteLine(" *** ***  Livro.Controllers - GetLivros *** *** ");
             return await _mediator.Send(new ConsultaLista.Executa() );
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<LivrariaMaterialDto>> GetLivroUnico(Guid id)
         {
-            Console.WriteLine(" *** ***  Livro especifico *** *** ");
+            Console.WriteLine(" *** ***  Livro.Controllers - GetLivroUnico *** *** ");
             return await _mediator.Send(new ConsultaFiltro.LivroUnico { LivroId = id } );
         }
-
     }
 }

@@ -25,11 +25,12 @@ namespace LojaServicos.Api.GateWay.MessageHandler
 		protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
 		{
 			var tempo = Stopwatch.StartNew();
-			_logger.LogInformation("*** *** Inicia o request *** *** ");
+			Console.WriteLine("*** *** GateWay.MessageHandler - SendAsync *** *** ");
+			_logger.LogInformation("*** *** GateWay.MessageHandler - Inicia o request *** *** ");
 			var response = await base.SendAsync(request, cancellationToken);
 			if (response.IsSuccessStatusCode)
 			{
-				_logger.LogInformation("*** ***  response  OK *** ***  ");
+				_logger.LogInformation("*** *** GateWay.MessageHandler - response  OK *** ***  ");
 
 				var contendo = await response.Content.ReadAsStringAsync();
 				var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
@@ -38,7 +39,7 @@ namespace LojaServicos.Api.GateWay.MessageHandler
 				var responseAutor = await _autorRemoto.GetAutor(resultado.AutorLivroGuid ?? Guid.Empty);				
 				if (responseAutor.resultado)
 				{
-					_logger.LogInformation("*** ***  AUTOR OK  *** ***  ");
+					_logger.LogInformation("*** ***  GateWay.MessageHandler - AUTOR OK  *** ***  ");
 					var objetoAutor = responseAutor.autor;
 					resultado.AutorDados = objetoAutor;
 					var resultadoStr = JsonSerializer.Serialize(resultado);
@@ -46,7 +47,7 @@ namespace LojaServicos.Api.GateWay.MessageHandler
 				}
 			}
 
-			_logger.LogInformation($"*** ***  Este processo se foi em {tempo.ElapsedMilliseconds} ms  *** *** ");
+			_logger.LogInformation($"*** *** GateWay.MessageHandler -  Este processo se foi em {tempo.ElapsedMilliseconds} ms  *** *** ");
 
 			return response;
 		}

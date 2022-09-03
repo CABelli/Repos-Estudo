@@ -3,8 +3,6 @@ using LojaServicos.Mensageria.Email.SendGridLivraria.Modelo;
 using SendGrid;
 using SendGrid.Helpers.Mail;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace LojaServicos.Mensageria.Email.SendGridLivraria.Implement
@@ -15,6 +13,7 @@ namespace LojaServicos.Mensageria.Email.SendGridLivraria.Implement
         {
             try
             {
+                Console.WriteLine("*** ***  SendGridEnviar *** ***");
                 var sendGridCliente = new SendGridClient(data.SendGridApiKey);
                 var destinatario = new EmailAddress(data.EmailDestinatario, data.NomeDestinatario);
                 var tituloEmail = data.Titulo;
@@ -28,6 +27,8 @@ namespace LojaServicos.Mensageria.Email.SendGridLivraria.Implement
                     conteudoMessage);
 
                 await sendGridCliente.SendEmailAsync(objMessage);
+
+                Console.WriteLine("*** ***  SendGridEnviar - ok *** ***");
 
                 return (true, null);
 

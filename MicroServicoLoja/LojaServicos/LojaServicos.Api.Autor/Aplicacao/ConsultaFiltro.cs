@@ -4,7 +4,6 @@ using LojaServicos.Api.Autor.Persistencia;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
@@ -30,8 +29,7 @@ namespace LojaServicos.Api.Autor.Aplicacao
             }
             public async Task<AutorDto> Handle(AutorUnico request, CancellationToken cancellationToken)
             {
-
-                //  throw new NotImplementedException();
+                Console.WriteLine("*** *** Autor.Aplicacao - ConsultaFiltro - Handle *** *** ");
 
                 var autor = await _contexto.AutorLivro.Where(x => x.AutorLivroGuid == request.AutorGuid).FirstOrDefaultAsync();
                 

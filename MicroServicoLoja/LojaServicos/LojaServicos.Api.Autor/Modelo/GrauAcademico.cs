@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace LojaServicos.Api.Autor.Modelo
 {
@@ -19,9 +16,6 @@ namespace LojaServicos.Api.Autor.Modelo
 
         public AutorLivro AutorLivro { get; set; }
 
-        // postgreen fica string 
-        // XXXXXXX
-        /// yyyyyyyy
         public string GrauAcademicoGuid { get; set; }
     }
 }
