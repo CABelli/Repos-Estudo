@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace LojaServicos.Api.CarrinhoCompra.Aplicacao
 {
@@ -14,6 +11,5 @@ namespace LojaServicos.Api.CarrinhoCompra.Aplicacao
         public string AutorLivro { get; set; }
 
         public DateTime? DataPublicacao { get; set; }
-
     }
 }

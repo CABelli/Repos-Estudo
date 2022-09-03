@@ -69,7 +69,6 @@ namespace LojaServicos.Api.CarrinhoCompra.Aplicacao
                 }
 
                 throw new Exception("Não pode inserir o livro no Carrinho ");
-
             }
         }
     }

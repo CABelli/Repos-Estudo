@@ -1,10 +1,8 @@
 ﻿using LojaServicos.Api.Autor.Aplicacao;
-using LojaServicos.Api.Autor.Modelo;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace LojaServicos.Api.Autor.Controllers
@@ -28,7 +26,7 @@ namespace LojaServicos.Api.Autor.Controllers
         [HttpGet]
         public async Task<ActionResult<List<AutorDto>>> GetAutores()
         {
-            Console.Write("AutorController - GetAutores");
+            Console.WriteLine("*** *** AutorController - GetAutores *** *** ");
             return await _mediator.Send(new Consulta.ListaAutor());
 
         }
@@ -36,12 +34,9 @@ namespace LojaServicos.Api.Autor.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<AutorDto>> GetAutorLivro(string id)
         {
+            Console.WriteLine("*** *** AutorController - GetAutorLivro *** *** ");
             return await _mediator.Send(new ConsultaFiltro.AutorUnico { AutorGuid = id });
 
         }
-
-        // public IActionResult Index()
-        // { return View();
-        // }
     }
 }

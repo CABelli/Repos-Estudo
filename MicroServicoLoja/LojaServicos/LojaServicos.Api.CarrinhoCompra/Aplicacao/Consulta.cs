@@ -7,7 +7,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using static LojaServicos.Api.CarrinhoCompra.Aplicacao.Novo;
 
 namespace LojaServicos.Api.CarrinhoCompra.Aplicacao
 {
@@ -30,6 +29,7 @@ namespace LojaServicos.Api.CarrinhoCompra.Aplicacao
 
             public async Task<CarrinhoDto> Handle(Executa request, CancellationToken cancellationToken)
             {
+                Console.WriteLine("*** *** CarrinhoCompra.Aplicacao - Consulta - Handle *** ***");
                 var carrinhoSecao = await _contexto.CarrinhoSecao.FirstOrDefaultAsync
                     (x => x.CarrinhoSecaoId == request.CarrinhoSecaoId);
 
@@ -67,6 +67,5 @@ namespace LojaServicos.Api.CarrinhoCompra.Aplicacao
                 return carrinhoSecaoDto;
             }
         }
-
     }
 }

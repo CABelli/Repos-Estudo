@@ -69,6 +69,9 @@ namespace LojaServicos.Api.Autor
             {
                 endpoints.MapControllers();
             });
+
+            var eventBus = app.ApplicationServices.GetRequiredService<IRabbitEventBus>();
+            eventBus.Subscribe<EmailEventoQueue, EmailEventoManejador>();
         }
     }
 }

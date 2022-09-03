@@ -1,7 +1,5 @@
 ﻿using LojaServicos.RabbitMQ.Bus.Eventos;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace LojaServicos.RabbitMQ.Bus.Comandos
 {

@@ -2,8 +2,6 @@
 using LojaServicos.Api.CarrinhoCompra.RemoteModel;
 using Microsoft.Extensions.Logging;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -23,9 +21,9 @@ namespace LojaServicos.Api.CarrinhoCompra.RemoteService
 
         public async Task<(bool resultado, LivroRemote Livro, string ErrorMessage)> GetLivro(Guid LivroId)
         {
-            //throw new NotImplementedException();
             try
             {
+                Console.WriteLine("*** *** CarrinhoCompra.RemoteService - LivroService - GetLivro *** ***");
                 var cliente = _httpClient.CreateClient("Livros");
 
                 var response = await cliente.GetAsync($"api/livrariamaterial/{LivroId}");

@@ -26,8 +26,8 @@ namespace LojaServicos.Api.Autor.ManejadorRabbit
         }
         public async Task Handle(EmailEventoQueue @event)
         {
-            Console.Write("*** *** EmailEventoManejador - Handle - livro: {@event.Titulo} *** *** ");
-            _logger.LogInformation("******  livro: {@event.Titulo} * *****  ");
+            Console.WriteLine($"*** *** EmailEventoManejador - Handle - livro: {@event.Titulo} *** *** ");
+            _logger.LogInformation($"******  livro: {@event.Titulo} * *****  ");
 
             var objData = new SendGridData();
             objData.Conteudo = @event.Conteudo;

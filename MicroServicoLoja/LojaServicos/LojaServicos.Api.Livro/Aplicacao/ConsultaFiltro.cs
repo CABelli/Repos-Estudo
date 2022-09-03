@@ -4,7 +4,6 @@ using LojaServicos.Api.Livro.Persistencia;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
@@ -32,7 +31,7 @@ namespace LojaServicos.Api.Livro.Aplicacao
 
             public async Task<LivrariaMaterialDto> Handle(LivroUnico request, CancellationToken cancellationToken)
             {
-                Console.WriteLine(" *** ***  ConsultaFiltro Manejador Handle LivroUnico *** *** ");
+                Console.WriteLine("*** *** Livro.Aplicacao - ConsultaFiltro/Manejador Handle *** ***");
                 var livro = await _contexto.LivrariaMaterial.Where( x => x.LivrariaMaterialId == request.LivroId).FirstOrDefaultAsync();
 
                 if (livro == null)
