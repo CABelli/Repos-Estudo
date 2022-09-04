@@ -58,7 +58,7 @@ namespace LojaServicos.Api.Livro.Aplicacao
 
                 var valor = await _contexto.SaveChangesAsync();
 
-                _eventBus.Publish(new EmailEventoQueue("cesar.belli@gmail.com",
+                _eventBus.Publish(new EmailEventoQueue("cesar.belli@hotmail.com",
                     request.Titulo,
                     "Esse conteudo é um exemplo"));
 

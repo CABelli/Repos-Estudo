@@ -12,6 +12,7 @@ namespace LojaServicos.Api.Autor.ManejadorRabbit
     {
         private readonly ILogger<EmailEventoManejador> _logger;
         private readonly ISendGridEnviar _sendGridEnviar;
+        // incluido o caminho completo porque esta classe também esta no pacote MediatR
         private readonly Microsoft.Extensions.Configuration.IConfiguration _configuration;
 
         public EmailEventoManejador() { }
