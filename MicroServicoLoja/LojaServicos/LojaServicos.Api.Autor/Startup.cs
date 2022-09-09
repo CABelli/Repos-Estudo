@@ -24,6 +24,8 @@ namespace LojaServicos.Api.Autor
             Configuration = configuration;
         }
 
+        //  subida em 09/09/2022
+
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
